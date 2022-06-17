@@ -83,9 +83,9 @@ export default function Home() {
             topics={"CM - Robledo"}
             value={temperatura_val}
             hr={hum_val}
-            pm1={PM1_val}
-            pm25={PM25_val}
-            pm10={PM10_val}
+            pm1={"PM1=" + PM1_val}
+            pm25={"PM2.5=" + PM25_val}
+            pm10={"PM10=" + PM10_val}
           ></InfoCard>
         )}
 
