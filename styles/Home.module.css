@@ -130,14 +130,14 @@
 .icon_box_hubspot_alert {
   width: 20px;
   height: 20px;
-  border: #ff4c05 solid 1px;
+  border: #0a0a0a solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 50%;
-  left: 47%;
+  top: 29%;
+  left: 48.5%;
   cursor: pointer;
 }
 
@@ -145,7 +145,7 @@
   content: "";
   width: 30px;
   height: 30px;
-  background: #ff4c05;
+  background: #0a0a0a;
   position: absolute;
   border-radius: 100%;
   animation: hubspotmove 2s infinite;
@@ -170,8 +170,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 50%;
-  left: 47%;
+  top: 29%;
+  left: 48.5%;
   cursor: pointer;
 }
 
@@ -204,8 +204,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 50%;
-  left: 47%;
+  top: 29%;
+  left: 48.5%;
   cursor: pointer;
 }
 
@@ -237,8 +237,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 50%;
-  left: 47%;
+  top: 29%;
+  left: 48.5%;
   cursor: pointer;
 }
 
@@ -270,8 +270,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 50%;
-  left: 47%;
+  top: 29%;
+  left: 48.5%;
   cursor: pointer;
 }
 
@@ -303,8 +303,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 50%;
-  left: 47%;
+  top: 29%;
+  left: 48.5%;
   cursor: pointer;
 }
 
@@ -336,8 +336,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 50%;
-  left: 47%;
+  top: 29%;
+  left: 48.5%;
   cursor: pointer;
 }
 

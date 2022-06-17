@@ -46,7 +46,6 @@ export default function Home() {
         setPM1val(note);
       } else if (topic === "medidor1/PM25") {
         setPM25val(note);
-        //setPM25val(500);
       } else if (topic === "medidor1/PM10") {
         setPM10val(note);
       }
