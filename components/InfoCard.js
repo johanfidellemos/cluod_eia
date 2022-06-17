@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Sidemenu.module.css";
-import { RiTempHotFill } from "react-icons/Ri";
-import { WiHumidity } from "react-icons/Wi";
-import { GiMatterStates } from "react-icons/Gi";
+import { RiTempHotFill } from "react-icons/ri";
+import { WiHumidity } from "react-icons/wi";
+import { GiMatterStates } from "react-icons/gi";
 
 export default function InfoCard(props) {
   return (
