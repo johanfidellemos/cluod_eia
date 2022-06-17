@@ -8,8 +8,16 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.row_main {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  background-color: red;
 }
 
 .footer {
@@ -108,9 +116,247 @@
   margin-left: 0.5rem;
 }
 
+.img_map {
+  width: 400px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+.icon_box_hubspot_alert {
+  width: 20px;
+  height: 20px;
+  border: #ff4c05 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_alert:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #ff4c05;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+.icon_box_hubspot_normal {
+  width: 20px;
+  height: 20px;
+  border: #13fe03 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_normal:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #13fe03;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+.icon_box_hubspot_moderado {
+  width: 20px;
+  height: 20px;
+  border: #c9ff17 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_moderado:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #c9ff17;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.icon_box_hubspot_dañinags {
+  width: 20px;
+  height: 20px;
+  border: #ff9717 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_dañinags:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #ff9717;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.icon_box_hubspot_dañina {
+  width: 20px;
+  height: 20px;
+  border: #ff1717 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_dañina:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #ff1717;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.icon_box_hubspot_muydañina {
+  width: 20px;
+  height: 20px;
+  border: #9317ff solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_muydañina:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #9317ff;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.icon_box_hubspot_peligro {
+  width: 20px;
+  height: 20px;
+  border: rgb(74, 9, 9) solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_peligro:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: rgb(74, 9, 9);
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
   }
 }

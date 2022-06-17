@@ -1,0 +1,51 @@
+.container_sidemenu {
+  height: 90%;
+  width: 150px;
+  background-color: black;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 50px;
+  color: white;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.card_icon {
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilo de card */
+.card_container {
+  height: 350px;
+  width: 250px;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 2%;
+}
+
+.row_card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.dot_value {
+  font-size: 30px;
+  color: white;
+}
