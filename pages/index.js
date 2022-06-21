@@ -39,13 +39,13 @@ export default function Home() {
       if (topic === "medidor1/humedad") {
         sethumval(note);
         cont = cont + 1;
-        setdata((data) => [...data, { id: cont, value: note }]);
       } else if (topic === "medidor1/temperatura") {
         settemperaturaval(note);
       } else if (topic === "medidor1/PM1") {
         setPM1val(note);
       } else if (topic === "medidor1/PM25") {
         setPM25val(note);
+        setdata((data) => [...data, { id: cont, value: note }]);
       } else if (topic === "medidor1/PM10") {
         setPM10val(note);
       }
@@ -72,12 +72,12 @@ export default function Home() {
       <main className={styles.main}>
         {show_cm && (
           <InfoCard
-            topics={"CM - Robledo"}
-            value={temperatura_val}
-            hr={hum_val}
-            pm1={"PM1=" + PM1_val}
-            pm25={"PM2.5=" + PM25_val}
-            pm10={"PM10=" + PM10_val}
+            topics={"CM - Caraño"}
+            value={temperatura_val + " °C"}
+            hr={hum_val + " %"}
+            pm1={"PM1= " + PM1_val}
+            pm25={"PM2.5= " + PM25_val}
+            pm10={"PM10= " + PM10_val}
           ></InfoCard>
         )}
 
@@ -104,7 +104,7 @@ export default function Home() {
           alt="mapa"
           className={styles.img_map}
         ></img>
-        {/* <Graph data={data}></Graph> */}
+        {<Graph data={data}></Graph>}
       </main>
     </div>
   );
