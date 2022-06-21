@@ -70,13 +70,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* <div className={styles.row_main}>
-          <InfoCard topics={"Temperatura"} value={temperatura_val}></InfoCard>
-          <InfoCard topics={"Humedad"} value={hum_val}></InfoCard>
-          <InfoCard topics={"PM1"} value={PM1_val}></InfoCard>
-          <InfoCard topics={"PM2.5"} value={PM25_val}></InfoCard>
-          <InfoCard topics={"PM10"} value={PM10_val}></InfoCard>
-        </div> */}
         {show_cm && (
           <InfoCard
             topics={"CM - Robledo"}
@@ -107,7 +100,7 @@ export default function Home() {
           onClick={() => setshow_cm(!show_cm)}
         ></div>
         <img
-          src="./mapa_medellin.svg"
+          src="./Screenshot_1.jpg"
           alt="mapa"
           className={styles.img_map}
         ></img>

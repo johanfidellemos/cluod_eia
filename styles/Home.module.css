@@ -117,7 +117,8 @@
 }
 
 .img_map {
-  width: 400px;
+  width: 60%;
+  height: 600px;
 }
 
 @media (max-width: 600px) {
@@ -136,15 +137,15 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 29%;
-  left: 48.5%;
+  top: 44%;
+  left: 50%;
   cursor: pointer;
 }
 
 .icon_box_hubspot_alert:after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: #0a0a0a;
   position: absolute;
   border-radius: 100%;
@@ -170,15 +171,15 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 29%;
-  left: 48.5%;
+  top: 44%;
+  left: 50%;
   cursor: pointer;
 }
 
 .icon_box_hubspot_normal:after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: #13fe03;
   position: absolute;
   border-radius: 100%;
@@ -204,15 +205,15 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 29%;
-  left: 48.5%;
+  top: 44%;
+  left: 50%;
   cursor: pointer;
 }
 
 .icon_box_hubspot_moderado:after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: #c9ff17;
   position: absolute;
   border-radius: 100%;
@@ -237,15 +238,15 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 29%;
-  left: 48.5%;
+  top: 44%;
+  left: 50%;
   cursor: pointer;
 }
 
 .icon_box_hubspot_dañinags:after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: #ff9717;
   position: absolute;
   border-radius: 100%;
@@ -270,15 +271,15 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 29%;
-  left: 48.5%;
+  top: 44%;
+  left: 50%;
   cursor: pointer;
 }
 
 .icon_box_hubspot_dañina:after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: #ff1717;
   position: absolute;
   border-radius: 100%;
@@ -303,15 +304,15 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 29%;
-  left: 48.5%;
+  top: 44%;
+  left: 50%;
   cursor: pointer;
 }
 
 .icon_box_hubspot_muydañina:after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: #9317ff;
   position: absolute;
   border-radius: 100%;
@@ -336,15 +337,15 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 29%;
-  left: 48.5%;
+  top: 44%;
+  left: 50%;
   cursor: pointer;
 }
 
 .icon_box_hubspot_peligro:after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: rgb(74, 9, 9);
   position: absolute;
   border-radius: 100%;
