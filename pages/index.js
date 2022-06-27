@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Sidemenu from "../components/Sidemenu";
 import InfoCard from "../components/InfoCard";
+import InfoCard1 from "../components/InfoCard1";
 import React, { useState, useEffect, useRef } from "react";
 import Graph from "../components/Graph";
 
@@ -15,14 +16,22 @@ var options = {
   client_id: "johan_user",
 };
 var cont = 0;
+var cont1 = 0;
 export default function Home() {
   const [hum_val, sethumval] = useState("");
   const [temperatura_val, settemperaturaval] = useState("");
   const [PM1_val, setPM1val] = useState("");
   const [PM25_val, setPM25val] = useState("");
   const [PM10_val, setPM10val] = useState("");
+  //medidor2
+  const [hum_val2, sethumval2] = useState("");
+  const [temperatura_val2, settemperaturaval2] = useState("");
+  const [PM1_val2, setPM1val2] = useState("");
+  const [PM25_val2, setPM25val2] = useState("");
+  const [PM10_val2, setPM10val2] = useState("");
   //data grafica
-  const [data, setdata2] = useState([{ id: 0, value: 0 }]);
+  const [data, setdata] = useState([{ id: 0, value: 0 }]);
+  const [data2, setdata2] = useState([{ id: 0, value: 0 }]);
 
   let hum_ref = useRef("");
   hum_ref.current = data;
@@ -45,7 +54,7 @@ export default function Home() {
         setPM1val(note);
       } else if (topic === "medidor1/PM25") {
         setPM25val(note);
-        setdata2((data) => [...data, { id: cont, value: note }]);
+        setdata((data) => [...data, { id: cont, value: note }]);
       } else if (topic === "medidor1/PM10") {
         setPM10val(note);
       }
@@ -53,6 +62,36 @@ export default function Home() {
   }, []);
 
   const [show_cm, setshow_cm] = useState(false);
+
+  let hum_ref2 = useRef("");
+  hum_ref2.current = data2;
+  useEffect(() => {
+    var client = mqtt.connect(
+      "mqtts://hickoryvole481.cloud.shiftr.io",
+      options
+    );
+    client.subscribe("medidor2/#");
+    var note;
+    client.on("message", function (topic, message) {
+      note = message.toString();
+
+      if (topic === "medidor2/humedad") {
+        sethumval2(note);
+        cont = cont + 1;
+      } else if (topic === "medidor2/temperatura") {
+        settemperaturaval2(note);
+      } else if (topic === "medidor2/PM1") {
+        setPM1val2(note);
+      } else if (topic === "medidor2/PM25") {
+        setPM25val2(note);
+        setdata2((data) => [...data, { id: cont, value: note }]);
+      } else if (topic === "medidor2/PM10") {
+        setPM10val2(note);
+      }
+    });
+  }, []);
+
+  const [show_cm2, setshow_cm2] = useState(false);
 
   // const data = [
   //   { id: 0, value: 120, units: "corriente" },
@@ -72,13 +111,24 @@ export default function Home() {
       <main className={styles.main}>
         {show_cm && (
           <InfoCard
-            topics={"CM - Caraño"}
+            topics={"CM - Silencio"}
             value={temperatura_val + " °C"}
             hr={hum_val + " %"}
             pm1={"PM1= " + PM1_val}
             pm25={"PM2.5= " + PM25_val}
             pm10={"PM10= " + PM10_val}
           ></InfoCard>
+        )}
+
+        {show_cm2 && (
+          <InfoCard1
+            topics={"CM - Caraño"}
+            value={temperatura_val2 + " °C"}
+            hr={hum_val2 + " %"}
+            pm1={"PM1= " + PM1_val2}
+            pm25={"PM2.5= " + PM25_val2}
+            pm10={"PM10= " + PM10_val2}
+          ></InfoCard1>
         )}
 
         <div
@@ -99,6 +149,26 @@ export default function Home() {
           }
           onClick={() => setshow_cm(!show_cm)}
         ></div>
+
+        <div
+          className={
+            PM25_val2 < 13
+              ? styles.icon_box_hubspot_normal2
+              : PM25_val2 > 12 && PM25_val2 < 38
+              ? styles.icon_box_hubspot_moderado2
+              : PM25_val2 > 37 && PM25_val2 < 56
+              ? styles.icon_box_hubspot_dañinags2
+              : PM25_val2 > 56 && PM25_val2 < 151
+              ? styles.icon_box_hubspot_dañina2
+              : PM25_val2 > 150 && PM25_val2 < 251
+              ? styles.icon_box_hubspot_muydañina2
+              : PM25_val2 > 250 && PM25_val2 < 5001
+              ? styles.icon_box_hubspot_peligro2
+              : styles.icon_box_hubspot_alert2
+          }
+          onClick={() => setshow_cm2(!show_cm2)}
+        ></div>
+
         <img
           src="./Screenshot_1.jpg"
           alt="mapa"

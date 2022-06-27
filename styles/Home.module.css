@@ -137,8 +137,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 44%;
-  left: 50%;
+  top: 58%;
+  left: 39%;
   cursor: pointer;
 }
 
@@ -171,8 +171,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 44%;
-  left: 50%;
+  top: 58%;
+  left: 39%;
   cursor: pointer;
 }
 
@@ -205,8 +205,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 44%;
-  left: 50%;
+  top: 58%;
+  left: 39%;
   cursor: pointer;
 }
 
@@ -238,8 +238,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 44%;
-  left: 50%;
+  top: 58%;
+  left: 39%;
   cursor: pointer;
 }
 
@@ -271,8 +271,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 44%;
-  left: 50%;
+  top: 58%;
+  left: 39%;
   cursor: pointer;
 }
 
@@ -304,8 +304,8 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 44%;
-  left: 50%;
+  top: 58%;
+  left: 39%;
   cursor: pointer;
 }
 
@@ -337,15 +337,248 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 44%;
-  left: 50%;
+  top: 58%;
+  left: 39%;
   cursor: pointer;
 }
 
 .icon_box_hubspot_peligro:after {
   content: "";
+  width: 30px;
+  height: 30px;
+  background: rgb(74, 9, 9);
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.icon_box_hubspot_alert2 {
+  width: 20px;
+  height: 20px;
+  border: #0a0a0a solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_alert2:after {
+  content: "";
   width: 25px;
   height: 25px;
+  background: #0a0a0a;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+.icon_box_hubspot_normal2 {
+  width: 20px;
+  height: 20px;
+  border: green solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_normal2:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: green;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+.icon_box_hubspot_moderado2 {
+  width: 20px;
+  height: 20px;
+  border: yellow solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_moderado2:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: yellow;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.icon_box_hubspot_dañinags2 {
+  width: 20px;
+  height: 20px;
+  border: orange solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_dañinags2:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: orange;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.icon_box_hubspot_dañina2 {
+  width: 20px;
+  height: 20px;
+  border: red solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_dañina2:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: red;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.icon_box_hubspot_muydañina2 {
+  width: 20px;
+  height: 20px;
+  border: purple solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_muydañina2:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: purple;
+  position: absolute;
+  border-radius: 100%;
+  animation: hubspotmove 2s infinite;
+}
+@keyframes hubspotmove {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+.icon_box_hubspot_peligro2 {
+  width: 20px;
+  height: 20px;
+  border: rgb(74, 9, 9) solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.icon_box_hubspot_peligro2:after {
+  content: "";
+  width: 30px;
+  height: 30px;
   background: rgb(74, 9, 9);
   position: absolute;
   border-radius: 100%;
