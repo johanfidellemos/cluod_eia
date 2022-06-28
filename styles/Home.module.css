@@ -131,7 +131,7 @@
 .icon_box_hubspot_alert {
   width: 20px;
   height: 20px;
-  border: #0a0a0a solid 1px;
+  border: black solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,7 +146,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  background: #0a0a0a;
+  background: black;
   position: absolute;
   border-radius: 100%;
   animation: hubspotmove 2s infinite;
@@ -165,7 +165,7 @@
 .icon_box_hubspot_normal {
   width: 20px;
   height: 20px;
-  border: #13fe03 solid 1px;
+  border: green solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +180,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  background: #13fe03;
+  background: green;
   position: absolute;
   border-radius: 100%;
   animation: hubspotmove 2s infinite;
@@ -199,7 +199,7 @@
 .icon_box_hubspot_moderado {
   width: 20px;
   height: 20px;
-  border: #c9ff17 solid 1px;
+  border: yellow solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,7 +214,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  background: #c9ff17;
+  background: yellow;
   position: absolute;
   border-radius: 100%;
   animation: hubspotmove 2s infinite;
@@ -232,7 +232,7 @@
 .icon_box_hubspot_dañinags {
   width: 20px;
   height: 20px;
-  border: #ff9717 solid 1px;
+  border: orange solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,7 +247,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  background: #ff9717;
+  background: orange;
   position: absolute;
   border-radius: 100%;
   animation: hubspotmove 2s infinite;
@@ -265,7 +265,7 @@
 .icon_box_hubspot_dañina {
   width: 20px;
   height: 20px;
-  border: #ff1717 solid 1px;
+  border: red solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,7 +280,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  background: #ff1717;
+  background: red;
   position: absolute;
   border-radius: 100%;
   animation: hubspotmove 2s infinite;
@@ -298,7 +298,7 @@
 .icon_box_hubspot_muydañina {
   width: 20px;
   height: 20px;
-  border: #9317ff solid 1px;
+  border: purple solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,7 +313,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  background: #9317ff;
+  background: purple;
   position: absolute;
   border-radius: 100%;
   animation: hubspotmove 2s infinite;
@@ -331,7 +331,7 @@
 .icon_box_hubspot_peligro {
   width: 20px;
   height: 20px;
-  border: rgb(74, 9, 9) solid 1px;
+  border: brown solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,7 +346,7 @@
   content: "";
   width: 30px;
   height: 30px;
-  background: rgb(74, 9, 9);
+  background: brown;
   position: absolute;
   border-radius: 100%;
   animation: hubspotmove 2s infinite;
@@ -364,13 +364,13 @@
 .icon_box_hubspot_alert2 {
   width: 20px;
   height: 20px;
-  border: #0a0a0a solid 1px;
+  border: black solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 47%;
+  top: 44%;
   left: 50%;
   cursor: pointer;
 }
@@ -379,7 +379,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  background: #0a0a0a;
+  background: black;
   position: absolute;
   border-radius: 100%;
   animation: hubspotmove 2s infinite;
@@ -404,7 +404,7 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 47%;
+  top: 44%;
   left: 50%;
   cursor: pointer;
 }
@@ -438,7 +438,7 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 47%;
+  top: 44%;
   left: 50%;
   cursor: pointer;
 }
@@ -471,7 +471,7 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 47%;
+  top: 44%;
   left: 50%;
   cursor: pointer;
 }
@@ -504,7 +504,7 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 47%;
+  top: 44%;
   left: 50%;
   cursor: pointer;
 }
@@ -537,7 +537,7 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 47%;
+  top: 44%;
   left: 50%;
   cursor: pointer;
 }
@@ -570,7 +570,7 @@
   justify-content: center;
   border-radius: 100%;
   position: absolute;
-  top: 47%;
+  top: 44%;
   left: 50%;
   cursor: pointer;
 }

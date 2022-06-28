@@ -7,7 +7,7 @@ import { GiMatterStates } from "react-icons/gi";
 
 export default function InfoCard1(props) {
   return (
-    <div className={styles.card_container}>
+    <div className={styles.card_container1}>
       <div className={styles.dot_value}>{props?.topics}</div>
       <div className={styles.row_card}>
         <RiTempHotFill
