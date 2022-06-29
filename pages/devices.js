@@ -13,22 +13,6 @@ export default function Devices() {
   const [Temperatura_prom_2, setTemperatura_prom_2] = useState("");
   const [Humedad_prom_1, setHumedad_prom_1] = useState("");
   //medidor1 pm 2.5
-  fetch("https://4484hp.deta.dev/dots_pm25", {
-    method: "GET",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-  }).then((response) => {
-    if (response.status === 200) {
-      return response.json().then((json_response) => {
-        console.log("eee", json_response);
-        setPM25_prom_1(json_response.dots_pm25);
-      });
-    } else {
-      alert("Algo salio mal");
-    }
-  });
 
   return (
     <div className={styles.container}>
